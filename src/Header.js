@@ -3,9 +3,9 @@ import React from 'react';
 class Header extends React.Component {
     render () {
         return (
-            <>
-            <h1>Welcome to Horny Beasts</h1>
-            </>
+            <div style={{display: 'flex',  justifyContent:'center', alignItems:'center', height: '100px'}}>
+                <h1> Welcome to Horny Beasts </h1>
+            </div>
         );
     };
 }

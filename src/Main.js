@@ -1,27 +1,23 @@
 import React from 'react';
-import HornedBeast from './HornedBeast.js';
-import narwhal from './narwhal.jpg';
-import triceratops from './triceratops.png';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import Beast from './components/Beast.js';
+import data from './data.json';
+
 
 class Main extends React.Component {
     render () {
         return (
-            <>
-            <div>
-                <HornedBeast 
-                src={narwhal} 
-                alt={'A Happy Narwhal'} 
-                title={'Narwhal'}
-                />
-                <HornedBeast 
-                src={triceratops} 
-                alt={'A Grumpy Triceratops'} 
-                title={'Triceratops'}
-                />
-            </div>
-            </>
-        )
-    }
-}
+            <Container fluid='md'>
+                <Row>
+                {data.map((beast) => {
+                    return <Beast src={beast.image_url} description={beast.description} title={beast.title} key={beast._id} horns={beast.horns}/>
+                })};
+                </Row>
+            </Container>
+        );
+    };
+};
 
 export default Main;
