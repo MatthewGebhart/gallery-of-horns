@@ -71,6 +71,8 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 ### Time Estimates
 
+#### Lab 2
+
 Feature 1 - Display images
 
 Estimate of time needed to complete: 1 hr_____
@@ -101,3 +103,15 @@ Start time: __3___
 Finish time: __4___
 
 Actual time needed to complete: __1___
+
+#### Lab 3
+
+Feature 1 - Display a Modal
+
+Estimate of time needed to complete: 3 hr_____
+
+Start time: _4:30____
+
+Finish time: _7____
+
+Actual time needed to complete: __2.5___

@@ -11,7 +11,15 @@ class Main extends React.Component {
             <Container fluid='md'>
                 <Row>
                 {data.map((beast) => {
-                    return <Beast src={beast.image_url} description={beast.description} title={beast.title} key={beast._id} horns={beast.horns}/>
+                    return <Beast 
+                    src={beast.image_url} 
+                    description={beast.description} 
+                    title={beast.title} 
+                    key={beast._id}
+                    id={beast._id} 
+                    horns={beast.horns}
+                    setShowModal={this.props.setShowModal}
+                    />
                 })};
                 </Row>
             </Container>
