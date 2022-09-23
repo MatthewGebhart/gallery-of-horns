@@ -115,3 +115,17 @@ Start time: _4:30____
 Finish time: _7____
 
 Actual time needed to complete: __2.5___
+
+*Note* I received help with some of the code to pass the props and methods around from classmate Chris Fanucchi
+
+#### Lab 4 
+
+Feature 1 - Filter by Number of Horns
+
+Estimate of time needed to complete: 3 hr_____
+
+Start time: _3____
+
+Finish time: _11:30____
+
+Actual time needed to complete: __DNF___

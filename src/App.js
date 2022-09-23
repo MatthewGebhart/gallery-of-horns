@@ -8,6 +8,7 @@ import data from './data.json';
 import BigBeast from './components/BigBeast.js';
 
 
+
 class App extends React.Component {
 
   constructor(props) {
@@ -15,6 +16,7 @@ class App extends React.Component {
     this.state = {
       showModal: false,
       selectedBeast: {},
+      displayedBeasts: data,
     };
   }
 
@@ -27,6 +29,7 @@ class App extends React.Component {
       this.setState({showModal: false});
     };
   };
+
 
   render() {
     return (
