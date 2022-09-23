@@ -21,8 +21,8 @@ class BeastForm extends React.Component {
     render() {
         return (
             <Container>
-                <Form onSubmit={this.props.handleFormSubmit} >
-                    <Form.Group className="mb-3" controlId="formBasicPassword">
+                <Form onSubmit={this.props.handleFormSubmit}  >
+                    <Form.Group className="mb-3" controlId="formSelection">
                         <Form.Label>How much horn do you want to see? </Form.Label>
                         <Form.Select aria-label="All" value={this.state.value} onChange={this.handleChange} placeholder="fdf"> 
                             <option value='all'>All</option>
