@@ -4,7 +4,6 @@ import Row from 'react-bootstrap/Row';
 import Beast from './components/Beast.js';
 import data from './data.json';
 import BeastForm from './components/BeastForm.js';
-import Button from "react-bootstrap/Button";
 
 
 class Main extends React.Component {
@@ -13,7 +12,7 @@ class Main extends React.Component {
         e.preventDefault();
         console.log(e.target.value);
 
-        const hornDrop = e.target.value;
+        // const hornDrop = e.target.value;
 
         const filteredBeasts = data.filter((beast) => 
         e.target.value);
