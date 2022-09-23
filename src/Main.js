@@ -8,14 +8,22 @@ import BeastForm from './components/BeastForm.js';
 
 class Main extends React.Component {
 
+  constructor(props) {
+    super(props);
+    this.state = {
+      displayedBeasts: data,
+    };
+  }
+
+
     handleFormSubmit = (e) => {
         e.preventDefault();
-        console.log(e.target.value);
+        console.log(e.target.formSelection.value);
 
         // const hornDrop = e.target.value;
 
         const filteredBeasts = data.filter((beast) => 
-        e.target.value);
+        parseInt(e.target.formSelection.value) === beast.horns);
       
         console.log(filteredBeasts);
 
@@ -29,7 +37,7 @@ class Main extends React.Component {
             <Container fluid='md'>
                 <BeastForm handleFormSubmit={this.handleFormSubmit}/>
                 <Row>
-                {data.map((beast) => {
+                {this.state.displayedBeasts.map((beast) => {
                     return <Beast 
                     src={beast.image_url} 
                     description={beast.description} 
